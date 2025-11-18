@@ -13,7 +13,7 @@ export default function Section5() {
         <div className="relative w-full h-[300px] sm:h-[380px] md:h-[420px] lg:h-[480px]">
           <Image src={image} alt="Background Image" fill className="object-cover object-center rounded-2xl" priority />
           {/* Overlay for text readability */}
-          <div className="absolute inset-0 bg-black/10 rounded-2xl"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-[#A854E980] to-[#4F91FC80] rounded-2xl"></div>
         </div>
 
         {/* Content Layer */}

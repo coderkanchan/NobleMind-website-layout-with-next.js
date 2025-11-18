@@ -32,16 +32,6 @@ export default function ContactPage() {
 
     setLoading(true)
     try {
-      // Replace the fetch URL with your API endpoint (e.g. /api/contact)
-      // Here we simulate a request for demo. Uncomment and update in real use.
-      /*
-      const res = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form),
-      })
-      if (!res.ok) throw new Error('Network response not ok')
-      */
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -209,4 +199,15 @@ export default function ContactPage() {
     </main>
   )
 }
+
+
+
+
+
+
+
+
+
+
+
 
