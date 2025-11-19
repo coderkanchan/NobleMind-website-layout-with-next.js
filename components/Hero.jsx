@@ -10,13 +10,13 @@ export default function Hero() {
 
       <div className="max-w-[1140px] mx-auto px-3 relative">
 
-        <div className='absolute -top-20 -left-30 w-[300px] h-[300px] bg-gradient-to-r from-[#A854E9] to-[#4F91FC50] blur-[150px] rounded-full'></div>
+        <div className='absolute z-50 -top-20 -left-30 w-[300px] h-[300px] bg-gradient-to-r from-[#A854E9] to-[#4F91FC50] blur-[150px] rounded-full'></div>
 
-        <div className='absolute  top-20 -right-30 w-[300px] h-[300px] bg-gradient-to-r from-[#A854E9] to-[#4F91FC50] blur-[140px] rounded-full'></div>
+        <div className='absolute z-50 top-20 -right-30 w-[300px] h-[300px] bg-gradient-to-r from-[#A854E9] to-[#4F91FC50] blur-[140px] rounded-full'></div>
 
         <div className="w-full max-w-[950px] text-center mx-auto">
 
-          <h1 className="xl:text-[64px] font-bold lg:text-5xl sm:text-4xl text-3xl leading-17">
+          <h1 className="xl:text-[64px] font-bold lg:text-5xl sm:text-4xl text-3xl ">
             Elevate Your Solutions with
             <br />
             <span className="bg-gradient-to-r from-[#A854E9] to-[#4F91FC] bg-clip-text text-transparent">

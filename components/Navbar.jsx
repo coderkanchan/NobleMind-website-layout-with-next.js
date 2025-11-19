@@ -22,25 +22,25 @@ export default function Navbar() {
   return (
 
 
-    <div className="w-full pt-5">
+    <div className="w-full py-5 sticky top-0 z-20  bg-white/80 backdrop-blur-lg">
       <div className="max-w-[1140px] mx-auto px-3 ">
         <nav className="flex items-center justify-between">
 
-          <div>
-            <Image src={logo} alt="logoImage" width={94} height={56} />
-          </div>
+          <Link href='/'>
+            <Image src={logo} alt="logoImage" className="cursor-pointer max-w-[94px] min-h-[56px]"/>
+          </Link>
 
           <div className="flex items-center justify-between w-full max-w-0 sm:max-w-[170px] lg:max-w-[600px] xl:max-w-[720px] ">
 
             <div className="hidden lg:flex items-center gap-10">
               {navlinks.map((link) => (
-                <Link key={link.id} href={link.href} className={` ${pathname === link.href ? "text-black underline decoration-1.5 decoration-[#a84fec] underline-offset-9" : "text-black/70 text-base font-normal hover:text-black"}`}>{link.link}</Link>
+                <Link key={link.id} href={link.href} className={` ${pathname === link.href ? "text-black underline decoration-1.5 decoration-[#a84fec] underline-offset-9" : "text-black/70 text-base font-normal hover:text-[#A854E9]"}`}>{link.link}</Link>
               ))}
             </div>
 
             <div className=" max-lg:w-full flex items-center justify-between gap-10">
 
-              <Link href="/contact" className="group sm:flex hidden lg:w-[169px] lg:h-[56px] w-[120px] h-[40px] text-base lg:text-lg font-bold text-white rounded-full  bg-gradient-to-r from-[#A854E9] to-[#4F91FC] items-center justify-center hover:shadow-2xl hover:shadow-[#A854E9] transition-all duration-300">
+              <Link href="/contact" className="group sm:flex hidden lg:w-[169px] lg:h-[56px] w-[120px] h-[40px] text-base lg:text-lg font-bold text-white rounded-full  bg-gradient-to-r from-[#A854E9] to-[#4F91FC] items-center justify-center hover:shadow-lg hover:shadow-[#a37ac2] transition-all duration-300">
                 <span className="transition-transform duration-300 group-hover:scale-110">Contact Us</span>
               </Link>
 
@@ -84,6 +84,7 @@ export default function Navbar() {
     </div>
   )
 }
+
 
 
 

@@ -14,13 +14,13 @@ import Section5 from "@/components/Section5";
 export default function Home() {
   return (
     <div className="">
-    
+      
       <Hero />
       <Section1 />
       <Section2 />
-      <Section3/>
-      <Section4/>
-      <Section5/>
+      <Section3 />
+      <Section4 />
+      <Section5 />
     </div>
   );
 }

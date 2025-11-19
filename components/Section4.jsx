@@ -28,7 +28,7 @@ const getStaggered = (id) => {
 
 export default function Section4() {
   return (
-    <div className="w-full py-20 bg-[#EFEFEF] relative ">
+    <div className="w-full py-40 bg-[#EFEFEF] relative ">
 
       <div className='absolute -bottom-10 -left-30 w-[300px] h-[300px] bg-gradient-to-r from-[#A854E990] to-[#4F91FC50] blur-[130px] rounded-full z-0'></div>
 
