@@ -10,10 +10,6 @@ export default function Hero() {
 
       <div className="max-w-[1140px] mx-auto px-3 relative">
 
-        <div className='absolute z-50 -top-20 -left-30 w-[300px] h-[300px] bg-gradient-to-r from-[#A854E9] to-[#4F91FC50] blur-[150px] rounded-full'></div>
-
-        <div className='absolute z-50 top-20 -right-30 w-[300px] h-[300px] bg-gradient-to-r from-[#A854E9] to-[#4F91FC50] blur-[140px] rounded-full'></div>
-
         <div className="w-full max-w-[950px] text-center mx-auto">
 
           <h1 className="xl:text-[64px] font-bold lg:text-5xl sm:text-4xl text-3xl ">
@@ -58,7 +54,7 @@ export default function Hero() {
 
         </div>
 
-        <div className="absolute sm:flex hidden xl:-left-8 left-0 lg:top-55 md:top-56 sm:top-59  max:sm: rounded-full bg-gradient-to-b from-[#A854E9] to-[#4F91FC] p-[20px]">
+        <div className="absolute sm:flex hidden xl:-left-8 left-0 xl:top-50 lg:top-42 md:top-40 sm:top-45   max:sm: rounded-full bg-gradient-to-b from-[#A854E9] to-[#4F91FC] p-[20px]">
           <div className='w-[55px] h-[55px] bg-white rounded-full'></div>
         </div>
 

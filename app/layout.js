@@ -5,14 +5,21 @@ import Footer from "@/components/Footer";
 import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import BreadCrumbs from "@/components/BreadCrumbs";
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
 
 
 export default function RootLayout({ children }) {
   const pathname = usePathname()
  
   return (
-    <html lang="en">
-      <body className=" overflow-x-hidden">
+    <html lang="en" suppressHydrationWarning  className={poppins.className}>
+      <body className="">
 
         <Navbar />
         <main className="">

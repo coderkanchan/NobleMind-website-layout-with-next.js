@@ -22,12 +22,12 @@ export default function Navbar() {
   return (
 
 
-    <div className="w-full py-5 sticky top-0 z-20  bg-white/80 backdrop-blur-lg">
+    <div className="w-full py-5 sticky top-0 z-20  bg-white/80  backdrop-blur-lg">
       <div className="max-w-[1140px] mx-auto px-3 ">
         <nav className="flex items-center justify-between">
 
           <Link href='/'>
-            <Image src={logo} alt="logoImage" className="cursor-pointer max-w-[94px] min-h-[56px]"/>
+            <Image src={logo} alt="logoImage" className="cursor-pointer max-w-[94px] min-h-[56px]" />
           </Link>
 
           <div className="flex items-center justify-between w-full max-w-0 sm:max-w-[170px] lg:max-w-[600px] xl:max-w-[720px] ">
@@ -37,6 +37,8 @@ export default function Navbar() {
                 <Link key={link.id} href={link.href} className={` ${pathname === link.href ? "text-black underline decoration-1.5 decoration-[#a84fec] underline-offset-9" : "text-black/70 text-base font-normal hover:text-[#A854E9]"}`}>{link.link}</Link>
               ))}
             </div>
+
+          
 
             <div className=" max-lg:w-full flex items-center justify-between gap-10">
 
@@ -73,7 +75,7 @@ export default function Navbar() {
 
           <Link href="/contact"
             className="flex sm:hidden lg:w-[169px] lg:h-[56px] w-[120px] h-[40px] text-base lg:text-lg font-bold text-white rounded-full bg-[#8943be] items-center justify-center border-2 border-white hover:bg-white hover:text-[#a84fec] cursor-pointer"
-            onClick={()=> setIsOpen(false)}>
+            onClick={() => setIsOpen(false)}>
             Contact Us
           </Link>
 

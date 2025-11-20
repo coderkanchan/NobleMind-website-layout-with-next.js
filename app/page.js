@@ -13,8 +13,12 @@ import Section5 from "@/components/Section5";
 
 export default function Home() {
   return (
-    <div className="">
-      
+    <div className="overflow-hidden">
+
+      <div className='absolute z-50 top-20 left-30 w-[300px] h-[300px] bg-gradient-to-r from-[#A854E9] to-[#4F91FC50] blur-[150px] rounded-full'></div>
+
+      <div className='absolute z-50 top-70 right-30 w-[250px] h-[250px] bg-gradient-to-r from-[#A854E9] to-[#4F91FC50] blur-[130px] rounded-full'></div>
+
       <Hero />
       <Section1 />
       <Section2 />
