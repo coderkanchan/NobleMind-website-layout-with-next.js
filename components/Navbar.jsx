@@ -36,7 +36,7 @@ export default function Navbar() {
 
       <div className="w-full py-5 fixed top-0 left-0  z-50  bg-white/80  backdrop-blur-lg">
 
-        <div className="max-w-[1140px] mx-auto px-3 related">
+        <div className="max-w-[1140px] mx-auto px-3 ">
 
           <nav className="flex items-center justify-between">
 
@@ -73,7 +73,7 @@ export default function Navbar() {
             </div>
           </nav>
 
-          <div className={`lg:hidden flex flex-col items-center justify-center absolute z-20 bg-[#a84fec] space-y-12 py-20 left-0 right-0 top-0 h-[400px] md:h-[500px] transition-all duration-700 ${isOpen ? "translate-y-0 opacity-100" : "-translate-y-[400px] opacity-0"}`}>
+          <div className={`lg:hidden flex flex-col items-center justify-center absolute z-20 bg-[#a84fec] space-y-5 lg:space-y-12 py-20 left-0 right-0 top-0 h-[400px] md:h-[500px] transition-all duration-700 ${isOpen ? "translate-y-0 opacity-100" : "-translate-y-[400px] opacity-0"}`}>
 
             {navlinks.map((link) => (
               <Link

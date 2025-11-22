@@ -24,3 +24,4 @@ export default function ClientTransitionWrapper({ children }) {
     </AnimatePresence>
   );
 }
+
