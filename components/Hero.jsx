@@ -6,9 +6,9 @@ import Link from 'next/link';
 
 export default function Hero() {
   return (
-    <div className="w-full sm:py-20 py-6 text-center">
+    <div className="w-full sm:py-10 md:py-30 py-6 text-center">
 
-      <div className="max-w-[1140px] mx-auto px-3 relative">
+      <div className="max-w-[1140px]  mx-auto px-3 relative">
 
         <div className="w-full max-w-[950px] text-center mx-auto">
 

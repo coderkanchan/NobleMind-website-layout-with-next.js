@@ -51,7 +51,7 @@ export default function ContactPage() {
   }
 
   return (
-    <main className="min-h-screen pb-10  bg-gray-50">
+    <main className=" py-10">
       <div className="max-w-6xl px-3  mx-auto">
         <header className="mb-10 text-center">
           <h1 className="xl:text-[64px] font-bold lg:text-5xl sm:text-4xl text-3xl leading-loose bg-gradient-to-b from-[#A854E9] to-[#4F91FC] bg-clip-text text-transparent">Contact Us</h1>

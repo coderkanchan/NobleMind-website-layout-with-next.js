@@ -22,8 +22,10 @@ export default function Navbar() {
   return (
 
 
-    <div className="w-full py-5 sticky top-0 z-20  bg-white/80  backdrop-blur-lg">
+    <div className="w-full py-5 fixed top-0 left-0  z-20  bg-white/80  backdrop-blur-lg">
+
       <div className="max-w-[1140px] mx-auto px-3 ">
+
         <nav className="flex items-center justify-between">
 
           <Link href='/'>
@@ -34,11 +36,11 @@ export default function Navbar() {
 
             <div className="hidden lg:flex items-center gap-10">
               {navlinks.map((link) => (
-                <Link key={link.id} href={link.href} className={` ${pathname === link.href ? "text-black underline decoration-1.5 decoration-[#a84fec] underline-offset-9" : "text-black/70 text-base font-normal hover:text-[#A854E9]"}`}>{link.link}</Link>
+                <Link key={link.id} href={link.href} className={` text-base ${pathname === link.href ? "text-black underline decoration-1.5 decoration-[#a84fec] underline-offset-9" : "text-black/70 font-normal hover:text-[#A854E9]"}`}>{link.link}</Link>
               ))}
             </div>
 
-          
+
 
             <div className=" max-lg:w-full flex items-center justify-between gap-10">
 
@@ -49,9 +51,11 @@ export default function Navbar() {
               <div className="lg:hidden flex relative z-30">
 
                 <button onClick={() => setIsOpen(!isOpen)} className="relative flex items-center justify-end">
-                  <CgMenuRight className={`absolute  w-10 h-10 cursor-pointer transition-all duration-700 ${isOpen ? "opacity-0 scale-0 rotate-90 " : "opacity-100 scale-100 rotate-0 text-[#8933cb]"}`} />
+                  <CgMenuRight className={`absolute w-10 h-10 cursor-pointer transition-all duration-700
+                     ${isOpen ? "opacity-0 scale-0 rotate-90 " : "opacity-100 scale-100 rotate-0 text-[#8933cb]"}`} />
 
-                  <IoClose className={`absolute w-10 h-10 cursor-pointer transition-all duration-700 ${isOpen ? "opacity-100 scale-100 rotate-0 text-white" : "opacity-0 scale-0 rotate-90"}`} />
+                  <IoClose className={`absolute w-10 h-10 cursor-pointer transition-all duration-700 
+                    ${isOpen ? "opacity-100 scale-100 rotate-0 text-white" : "opacity-0 scale-0 rotate-90"}`} />
                 </button>
 
               </div>
@@ -62,7 +66,9 @@ export default function Navbar() {
 
         </nav>
 
-        <div className={`lg:hidden flex flex-col items-center justify-center absolute z-20 bg-[#a84fec] space-y-12 py-20 left-0 right-0 top-0 h-[600px] md:h-[900px] transition-all duration-700 ${isOpen ? "translate-y-0 opacity-100" : "-translate-y-[400px] opacity-0"}`}>
+        <div className={`lg:hidden flex flex-col items-center justify-center absolute z-20 bg-[#a84fec] space-y-12 py-20 left-0 right-0 top-0
+           h-[600px] md:h-[900px] transition-all duration-700 ${isOpen ? "translate-y-0 opacity-100" : "-translate-y-[400px] opacity-0"}`}>
+
           {navlinks.map((link) => (
             <Link
               key={link.id}
