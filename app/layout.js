@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import ClientTransitionWrapper from "@/components/ClientTransitionWrapper";
 import BreadCrumbs from "@/components/BreadCrumbs";
 import { Poppins } from "next/font/google";
+import { NavProvider } from "@/context/NavContext";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -20,10 +21,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning className={poppins.className}>
       <body className="min-h-screen flex flex-col">
-
-        <Navbar />
-        <main className="grow">
-          {/* <AnimatePresence>
+        <NavProvider>
+          <Navbar />
+          <main className="grow">
+            {/* <AnimatePresence>
             <motion.div
               key={pathname}
               initial={{ opacity: 0, y: 20 }}
@@ -34,12 +35,13 @@ export default function RootLayout({ children }) {
               {children}
             </motion.div>
           </AnimatePresence> */}
-          <ClientTransitionWrapper>
-            <BreadCrumbs />
-            {children}
-          </ClientTransitionWrapper>
-        </main>
-        <Footer />
+            <ClientTransitionWrapper>
+              <BreadCrumbs />
+              {children}
+            </ClientTransitionWrapper>
+          </main>
+          <Footer />
+        </NavProvider>
       </body>
     </html>
   );

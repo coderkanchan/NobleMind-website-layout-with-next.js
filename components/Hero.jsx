@@ -12,7 +12,7 @@ export default function Hero() {
 
         <div className="w-full max-w-[950px] text-center mx-auto">
 
-          <h1 className="xl:text-[64px] font-bold lg:text-5xl sm:text-4xl text-3xl ">
+          <h1 className=" xl:text-[64px] font-bold lg:text-5xl sm:text-4xl text-3xl ">
             Elevate Your Solutions with
             <br />
             <span className="bg-gradient-to-r from-[#A854E9] to-[#4F91FC] bg-clip-text text-transparent">
@@ -20,10 +20,10 @@ export default function Hero() {
             </span>
           </h1>
 
-          <p className="max-w-[850px] mx-auto font-normal text-base py-4">At Noble Mind IT, we're dedicated to taking your IT solutions to new heights. In today's ever-evolving technological landscape, having a trusted partner to elevate your IT infrastructure is paramount.</p>
+          <p className=" max-w-[850px] mx-auto font-normal text-base py-4">At Noble Mind IT, we're dedicated to taking your IT solutions to new heights. In today's ever-evolving technological landscape, having a trusted partner to elevate your IT infrastructure is paramount.</p>
         </div>
 
-        <div className='p-[5px] bg-gradient-to-b from-[#A854E950] to-[#4F91FC50] rounded-2xl relative z-10 my-10 flex items-center justify-center'>
+        <div className=' p-[5px] bg-gradient-to-b from-[#A854E950] to-[#4F91FC50] rounded-2xl   my-10 flex items-center justify-center'>
 
           <div className='w-full h-[400px] md:h-[480px] lg:h-[520px] relative overflow-hidden  '>
             <Image src={img} fill alt="Hero image" priority className='rounded-xl object-cover object-center' />
