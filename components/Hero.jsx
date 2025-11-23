@@ -23,7 +23,7 @@ export default function Hero() {
           <p className=" max-w-[850px] mx-auto font-normal text-base py-4">At Noble Mind IT, we're dedicated to taking your IT solutions to new heights. In today's ever-evolving technological landscape, having a trusted partner to elevate your IT infrastructure is paramount.</p>
         </div>
 
-        <div className=' p-[5px] bg-gradient-to-b from-[#A854E950] to-[#4F91FC50] rounded-2xl   my-10 flex items-center justify-center'>
+        <div className='relative z-10 p-[5px] bg-gradient-to-b from-[#A854E950] to-[#4F91FC50] rounded-2xl   my-10 flex items-center justify-center'>
 
           <div className='w-full h-[400px] md:h-[480px] lg:h-[520px] relative overflow-hidden  '>
             <Image src={img} fill alt="Hero image" priority className='rounded-xl object-cover object-center' />
@@ -33,7 +33,7 @@ export default function Hero() {
 
             <div className='flex items-center justify-between gap-1 md:gap-3 md:flex-row flex-col  w-full max-w-[200px] '>
               <span className='font-bold xl:text-6xl lg:text-5xl text-3xl text-white'>8+</span>
-              <span className='max-w-[100px]  md:text-lg  text-base font-normal text-white md:text-left'>Years of Experience</span>            
+              <span className='max-w-[100px]  md:text-lg  text-base font-normal text-white md:text-left'>Years of Experience</span>
             </div>
 
             <div className='hidden sm:flex w-full max-w-[1px] h-[80px] bg-gradient-to-b from-transparent via-white to-transparent'></div>
@@ -62,9 +62,8 @@ export default function Hero() {
           <div className='w-[55px] h-[55px] bg-white rounded-full'></div>
         </div>
 
-
       </div>
-      
+
       <Link href="/getStarted" className="flex items-center justify-center mx-auto group  rounded-full md:w-[175px] md:h-[56px] w-[120px] h-[40px] bg-gradient-to-r from-[#A854E9] to-[#4F91FC] hover:shadow-[2px_2px_25px_2px] hover:shadow-[#ac5de990] transition-all duration-300 md:text-lg text-base font-semibold text-white">
         <span className=" transition-transform duration-300 group-hover:scale-110">Get Started</span>
       </Link>
